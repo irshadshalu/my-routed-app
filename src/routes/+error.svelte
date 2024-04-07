@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import TerminalView from '../pages/TerminalView.svelte';
 </script>
 
-<h3>Requested page path is {$page.url.pathname}</h3>
+<TerminalView pathname={$page.url.pathname} />
